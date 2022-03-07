@@ -6,9 +6,10 @@ const Menu = () =>{
     const [data,setData] = useState([]);
     const [filter,setFilter] = useState('all');
     const [filteredData,setFilteredData] = useState([]);
-    const searchValue = 'spicy';
+    const searchValue = 'bolivia';
     //proxy server to use CORS
     const proxy = 'https://fierce-escarpment-42855.herokuapp.com/';
+    // const proxy = '';
     const str = proxy + 'https://api.edamam.com/search?q='+ searchValue + '&app_id=' + process.env.REACT_APP_API_ID + '&app_key=' + process.env.REACT_APP_API_KEY;
     function parseMenu(data){
         let results = data.hits;
